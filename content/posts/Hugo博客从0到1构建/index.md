@@ -1,5 +1,5 @@
 ---
-title: "Hugo 博客从0-1构建：GitHub Pages + GitHub Actions + 本地主题版完整记录" # 标题
+title: "Hugo博客从0到1构建：GitHubPages+GitHubActions+本地主题版完整记录" # 标题
 date: 2026-03-24T01:22:28+08:00 # 发布时间
 lastmod: 2026-03-24T01:22:28+08:00 # 修改时间，为了seo搜索，告诉google你修改了文章 
 author: "uaena" #作者
@@ -137,7 +137,7 @@ U:\比特\uaenawook.github.io
 
 ## 五、初始化 Git 仓库并绑定远程仓库
 
-在项目根目录终端执行：
+在项目根目录`U:\比特\uaenawook.github.io`终端执行：
 
 ```bash
 git init
@@ -179,7 +179,7 @@ uaenawook.github.io/
 ├─ static/       # 静态资源，例如图片
 └─ hugo.toml     # Hugo 主配置文件
 ```
-
+![6.下载并放入主题.png](./6.下载并放入主题.png)
 ---
 
 ## 七、下载并放入主题
@@ -206,7 +206,7 @@ uaenawook.github.io/
 * 目录名必须和配置文件中的主题名一致
 
 > 主题目录放好后的截图
-> ![7.下载并放入主题](./7.下载并放入主题.png)
+> ![7.主题目录.png](./7.主题目录.png)
 
 ---
 
@@ -240,9 +240,9 @@ disableKinds = ["RSS"]
 > `UaenaWook Blog`
 > 改成你想要的名字。
 
-我已经写好了完整配置，点击查看后复制到你的`hugo.toml`文件内并修改（此配置有些设置仅针对本主题，具体你可以发）
+我已经写好了完整配置，点击([阅读hugo.toml](./hugo.txt))查看后复制到你的`hugo.toml`文件内并修改（此配置有些设置仅针对本主题，具体你可以发）
 
-[阅读Git.txt](hugo.txt)
+
 
 ---
 
@@ -261,8 +261,8 @@ disableKinds = ["RSS"]
 * 自动构建博客
 * 自动部署到 GitHub Pages
 
-我已经写好了完整文件，点开阅读后直接覆盖你的`.github/workflows/hugo.yml`：
-[hugo](github_workflows_hugo.txt) 
+我已经写好了完整文件，点开([阅读hugo.yml](./github_workflows_hugo.txt) )后直接覆盖你的`.github/workflows/hugo.yml`：
+
 
 核心的头部示例(只做参考)：
 
@@ -280,7 +280,7 @@ on:
 
 ## 十、添加 `.gitignore`
 
-在项目根目录新建 `.gitignore`，内容如下：
+在项目根目录新建 `.gitignore`，填写内容如下并保存：
 
 ```gitignore
 public/
@@ -314,17 +314,17 @@ uaenawook.github.io/
 ├─ .gitignore                      # Git 忽略文件
 └─ hugo.toml                       # Hugo 主配置
 ```
-archetypes/[default.md](default.txt)
+阅读archetypes/[default.md](./default.txt)
 
-assets/[jsconfig.json](jsconfig.txt)
+阅读assets/[jsconfig.json](./jsconfig.txt)
 
-.github/workflows/[hugo.yml](github_workflows_hugo.txt)
+阅读.github/workflows/[hugo.yml](./github_workflows_hugo.txt)
 
 
-根目录/[hugo.toml](hugo.txt) 
+阅读根目录/[hugo.toml](./hugo.txt) 
 
 static目录
-> ![static目录](11.static目录.png)
+> ![static目录](./11.static目录.png)
 
 ---
 
@@ -365,7 +365,7 @@ http://localhost:1313/
 * 菜单是否正常
 
 > 本地 `hugo server -D` 跑成功的终端截图
-> ![12.hugo本地运行成功.png](12.hugo本地运行成功.png)
+> ![12.hugo本地运行成功.png](./12.hugo本地运行成功.png)
 
 ---
 
@@ -405,7 +405,7 @@ GitHub Actions
 
 这样以后每次 `git push`，都会自动构建并自动部署。
 
-> ![14.选择pages.png](14.选择pages.png)
+> ![14.选择pages.png](./14.选择pages.png)
 
 ---
 
@@ -418,15 +418,16 @@ Actions
 ```
 
 如果工作流正常，你会看到自动部署流程运行并通过。
+如不正常截图发给AI解决
 
 > GitHub Actions 成功通过的截图
-> ![15.Actions成功.png](15.Actions成功.png)
+> ![15.Actions成功.png](./15.Actions成功.png)
 
 ---
 
 ## 十六、访问网站
 
-部署成功后，直接访问：
+部署成功后，直接访问([UaenaWook Blog](https://uaenawook.github.io/))：
 
 ```text
 https://uaenawook.github.io/
@@ -435,7 +436,7 @@ https://uaenawook.github.io/
 > 如果你不是 `uaenawook`，这里改成你自己的 GitHub Pages 地址。
 
 到这里，博客就已经正式上线了。
-> ![16.网站正常展示.png](16.网站正常展示.png)
+> ![16.网站正常展示.png](./16.网站正常展示.png)
 
 ---
 
@@ -476,7 +477,7 @@ themes/       # 改主题
 > 1.先点初始化
 
 > 2.第二项选hugo
-> ![17.配置FM1.png](17.配置FM1.png)
+> ![17.配置FM1.png](./17.配置FM1.png)
 > 3.文件夹选`content`
 
 
