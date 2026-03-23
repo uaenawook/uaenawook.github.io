@@ -1,0 +1,275 @@
+# 网站最终访问地址。
+# 你这是 GitHub Pages 用户站点，所以这里应写你的正式网址。
+# 如果以后你换域名，就把这里改成新域名。
+# 例子：
+# baseURL = "https://你的域名/"
+baseURL = "https://uaenawook.github.io/"
+
+# 站点语言/地区设置。
+# 你现在用中文，所以这里写 zh-CN。
+# 常见可选值：
+# zh-CN = 简体中文
+# en-US = 英文（美国）
+# ja-JP = 日语
+# 这会影响部分语言相关行为和元信息。
+locale = "zh-CN"
+
+# 网站标题。
+# 一般会显示在浏览器标签、SEO 标题、主题页头等位置。
+# 你以后想改站名，主要改这里。
+title = "UaenaWook Blog"
+
+# 当前使用的主题文件夹名称。
+# 这里必须和 themes 目录下的主题文件夹名完全一致。
+# 例如如果你的主题目录叫：
+# themes/hugo-theme-monochrome
+# 那这里就必须写：
+# theme = "hugo-theme-monochrome"
+theme = "hugo-theme-monochrome"
+
+# 禁用某些 Hugo 自动生成的页面类型。
+# 这里禁用了 RSS。
+# 如果你不想让网站生成 RSS 订阅地址，就保留。
+# 如果以后你想启用 RSS，就把这一行删掉，或者改为空数组：
+# disableKinds = []
+disableKinds = ["RSS"]
+
+
+# -------------------------
+# 作者信息
+# -------------------------
+[author]
+
+  # 作者名字。
+  # 有些主题会显示作者名，也可能用于页面元信息。
+  name = "uaenawook"
+
+  # 作者邮箱。
+  # 有些主题不一定会显示，但可以作为站点作者资料的一部分。
+  # 如果你不想写真实邮箱，可以改成空字符串：
+  # email = ""
+  email = "820649664@qq.com"
+
+
+# -------------------------
+# 输出格式设置
+# -------------------------
+[outputs]
+
+  # 首页要生成哪些格式。
+  # "HTML" = 普通网页
+  # "JSON" = 额外生成 JSON 数据，很多主题的本地搜索功能会用到
+  # 你现在开启 JSON，是为了让站内搜索能工作。
+  # 如果你以后不用搜索，可以只写：
+  # home = ["HTML"]
+  home = ["HTML", "JSON"]
+
+  # 普通文章页输出格式。
+  # 一般保留 HTML 即可。
+  page = ["HTML"]
+
+  # 栏目页输出格式。
+  # 比如 /posts/ 这种列表页面。
+  section = ["HTML"]
+
+  # 分类法页面输出格式。
+  # 比如 categories、tags 等这类分类总页。
+  taxonomy = ["HTML"]
+
+  # 分类项详情页输出格式。
+  # 比如某个具体分类下面的文章列表页。
+  term = ["HTML"]
+
+
+# -------------------------
+# 主题参数
+# 这一块是给主题用的自定义配置
+# -------------------------
+[params]
+
+  # 导航栏显示的站点标题。
+  # 这通常显示在网页顶部左上角。
+  # 如果你想顶部显示别的名字，就改这里。
+  navbar_title = "UaenaWook Blog"
+
+  # 网站简介。
+  # 常用于首页摘要、SEO 描述、主题简介区域。
+  # 建议一句话说明你的网站是干什么的。
+  description = "我是uaena，正在探索编程之美 ✨"
+
+  # 网站副标题。
+  # 有些主题会显示在首页标题下方。
+  # 如果你不想显示太多说明，可以改短一点。
+  subtitle = "我是uaena，在自学编程。在这里记录深度思考与成长点滴。"
+
+  # 个人简介 / Bio。
+  # 一般会显示在首页个人信息区域。
+  bio = "自学 C++ 💻 | 正在探索 Blog 开发 ✨"
+
+  # 页脚内容。
+  # 这里支持 HTML。
+  # 你可以写版权信息、年份、主题来源等。
+  # 如果以后你不想显示主题来源，可以直接删掉后半段 HTML。
+  footer = "Copyright © 2026 <b>uaenawook</b> · Theme by <a href=\"https://kaiiiz.github.io/hugo-theme-monochrome/\" target=\"_blank\" rel=\"noopener\">Monochrome</a>"
+
+  # 头像路径。
+  # 这里写的是相对 static 目录的路径。
+  # 例如 static/img/avatar.jpg
+  # 那这里就写：
+  # avatar = "img/avatar.jpg"
+  # 如果你的头像换成 png，也要同步改后缀。
+  avatar = "img/avatar.jpg"
+
+  # 默认主题模式。
+  # 常见可选值：
+  # "auto"  = 跟随系统深浅色
+  # "light" = 始终浅色模式
+  # "dark"  = 始终深色模式
+  # 你现在用 auto，最通用。
+  defaultTheme = "auto"
+
+  # 是否启用站内搜索。
+  # true  = 开启搜索
+  # false = 关闭搜索
+  # 开启后，一般需要 [outputs] 里的 home 同时包含 JSON。
+  enable_site_search = true
+
+  # 是否启用目录（Table of Contents）。
+  # true  = 文章页显示目录
+  # false = 不显示目录
+  # 适合长文章。
+  enable_toc = true
+
+  # 目录显示位置。
+  # 常见可选值通常有：
+  # "right" = 显示在右侧
+  # "left"  = 显示在左侧
+  # 具体最终支持哪些值，要看主题本身。
+  # 你现在用 right，最常见。
+  toc_position = "right"
+
+  # 是否启用数学公式渲染。
+  # true  = 支持 LaTeX/数学公式
+  # false = 不启用公式功能
+  # 如果你以后不写数学公式，可以改成 false。
+  enable_math = true
+
+  # 是否启用图片缩放功能。
+  # true  = 点击图片可放大
+  # false = 图片不启用放大效果
+  # 对博客阅读体验通常有帮助。
+  enable_zooming_js = true
+
+
+  # -------------------------
+  # 列表页布局设置
+  # 比如文章归档页、文章列表页
+  # -------------------------
+  [params.list_layout]
+
+    # 是否按年份分组显示文章列表。
+    # true  = 例如 2026、2025 分组展示
+    # false = 直接一个平铺列表，不按年份分组
+    enable_group_by_year = true
+
+    # 是否显示日期。
+    # true  = 列表页显示每篇文章日期
+    # false = 不显示日期
+    enable_show_date = true
+
+    # 是否启用分页。
+    # true  = 文章多时会分页
+    # false = 所有文章一次性全显示
+    # 一般建议 true，文章多了更整洁。
+    enable_pagination = true
+
+    # 是否启用标题锚点。
+    # true  = 标题可能支持锚点定位/跳转
+    # false = 不启用
+    enable_header_anchor = true
+
+
+# -------------------------
+# 顶部导航菜单
+# 你可以增删改这里来控制导航栏
+# -------------------------
+[menu]
+
+  # 第一项：文章
+  [[menu.navbar]]
+    # 菜单显示名称
+    name = "文章"
+    # 点击后跳转地址
+    url = "/posts/"
+    # 排序权重，数字越小越靠前
+    weight = 1
+
+  # 第二项：题解
+  [[menu.navbar]]
+    name = "题解"
+    url = "/solutions/"
+    weight = 2
+
+  # 第三项：分类
+  [[menu.navbar]]
+    name = "分类"
+    url = "/categories/"
+    weight = 3
+
+  # 第四项：归档
+  # 你这里目前也指向 /posts/
+  # 如果你以后有真正的归档页，再改链接。
+  [[menu.navbar]]
+    name = "归档"
+    url = "/posts/"
+    weight = 4
+
+  # 第五项：说说
+  [[menu.navbar]]
+    name = "说说"
+    url = "/moments/"
+    weight = 5
+
+  # 第六项：关于
+  [[menu.navbar]]
+    name = "关于"
+    url = "/about/"
+    weight = 6
+
+
+# -------------------------
+# Markdown / 渲染相关设置
+# -------------------------
+[markup]
+
+  # Goldmark 是 Hugo 默认的 Markdown 渲染器。
+  [markup.goldmark]
+
+    [markup.goldmark.parser]
+
+      # 是否自动给标题生成 ID。
+      # true  = 自动生成标题锚点 ID，便于目录跳转、复制链接
+      # false = 不自动生成
+      # 一般建议 true。
+      autoHeadingID = true
+
+  # 文章目录（TOC）详细设置
+  [markup.tableOfContents]
+
+    # 从几级标题开始进入目录
+    # 1 = 从 H1 开始
+    # 2 = 从 H2 开始
+    # 如果你不想把一级标题放进目录，可以改成 2。
+    startLevel = 1
+
+    # 目录统计到几级标题
+    # 例如：
+    # 3 = 最多到 H3
+    # 4 = 最多到 H4
+    # 5 = 最多到 H5
+    endLevel = 5
+
+    # 目录是否使用有序列表
+    # true  = 1. 1.1 1.2 这种编号形式
+    # false = 无序圆点列表
+    ordered = false
