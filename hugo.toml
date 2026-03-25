@@ -252,6 +252,10 @@ disableKinds = ["RSS"]
       # false = 不自动生成
       # 一般建议 true。
       autoHeadingID = true
+# 解决a标签被屏蔽
+[markup.goldmark.renderer]
+  unsafe = true# 必须设置为 true，否则 <a> 标签会被直接抹除
+
 
   # 文章目录（TOC）详细设置
   [markup.tableOfContents]

@@ -52,3 +52,20 @@ TocOpen: false # false=目录展开
     ```
     ![图片名](./测试.png)
     ```
+7. 写代码
+```c
+//```c
+    int main()
+    {
+        printf("Hello World!\n");
+        return 0;
+    }
+//```
+```
+8. 引用HTML文件
+演示链接：[🚀 打开【栈模拟队列】全屏交互演示](/tools/stack-queue.html)
+```
+1. 把文件放在根目录uaenawook.github.io\static\tools\stack-queue.html
+2. 把文件拷贝一份放在当前博客里做备份
+3. 在文档里直接引用 [栈模拟队列](/tools/stack-queue.html)
+```
