@@ -17,15 +17,16 @@ TocOpen: false # false=目录展开
 # 生活	CF, 洛克王国, 时间管理, 复盘
 ---
 
+### 题目
 LeetCode：[232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/description/)
 
 想要更直观地理解？请点击这里：[🚀 打开【栈模拟队列】全屏交互演示](/tools/stack-queue.html)
 
-图解：
-
+### 图解：
+点击图片可放大查看
 ![232用栈实现队列白.png](./232用栈实现队列白.png)
 
-代码：
+### 代码：
 
 ```C
 
