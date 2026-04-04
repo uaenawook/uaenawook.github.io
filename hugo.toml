@@ -221,7 +221,7 @@ disableKinds = ["RSS"]
   # 如果你以后有真正的归档页，再改链接。
   [[menu.navbar]]
     name = "归档"
-    url = "/posts/"
+    url = "/archives/"
     weight = 4
 
   # 第五项：说说
